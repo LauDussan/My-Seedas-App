@@ -8,10 +8,10 @@ export default function Home() {
       <header className={styles.header}>
         <div className={styles.logo}>
           <Image
-            src="/seedas_logo.svg"
+            src="/LOGO SEEDAS 3.jpg"
             alt="Seedas Logo"
             width={200}
-            height={50}
+            height={70}
           />
         </div>
         <div className={styles.buttons}>
