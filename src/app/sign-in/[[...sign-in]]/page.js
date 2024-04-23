@@ -1,17 +1,24 @@
 import { SignIn } from "@clerk/nextjs";
 import Image from "next/image";
 
-export default function Page() {
+export default function page() {
   return (
-    <div className="relative">
-      {/* Imagen de fondo */}
-      <div className="absolute inset-0 z-0">
-        <Image src='/fondo-l.jpg' alt="cacaotera" layout="fill" objectFit="cover" />
+    <>
+      {/* Contenedor principal */}
+      <div className="relative h-screen">
+        {/* Imagen de fondo */}
+        <Image
+          src='/fondo-l.jpg'
+        
+          layout="fill" // Llena todo el contenedor
+          objectFit="cover" // Ajusta la imagen para cubrir completamente el contenedor
+          className="z-0" // Coloca la imagen detrás del contenido
+        />  
+        {/* Contenedor del formulario de inicio de sesión */}
+        <div className="absolute top-20 right-0 z-10"> {/* Alinea el formulario de inicio de sesión en la parte superior derecha */}
+          <SignIn />
+        </div>
       </div>
-      {/* Formulario de inicio de sesión */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-        <SignIn />
-      </div>
-    </div>
+    </>
   );
 }

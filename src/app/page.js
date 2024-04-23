@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
+import { UserButton } from "@clerk/nextjs";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       <header className={styles.header}>
         <div className={styles.logo}>
           <Image
-            src="/LOGO SEEDAS 3.jpg"
+            src="/LOGO-SEEDAS.jpg"
             alt="Seedas Logo"
             width={200}
             height={70}
@@ -24,6 +25,7 @@ export default function Home() {
           <Link href="/sign-up">
             <button className={styles.button}>Regístrate</button>
           </Link>
+          
         </div>
       </header>
       <section className={styles.description}>
