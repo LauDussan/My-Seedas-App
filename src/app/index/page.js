@@ -1,8 +1,11 @@
-export default function Pages() {
+
+import { UserButton } from "@clerk/nextjs";
+import Image from "next/image";
+
+export default function index() {
   return (
     <div>
-      <h1>Welcome to Seedas</h1>
-      <p>This is the home page after login.</p>
+      <UserButton/>
     </div>
   );
 }

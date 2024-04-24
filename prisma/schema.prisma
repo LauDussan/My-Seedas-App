@@ -12,6 +12,15 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// Modelo para el User
+model User {
+  id        Int      @id @default(autoincrement())
+  userId    String   @unique
+  fullName  String
+  email     String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
 // Modelo para el Productor
 model Productor {
   id        Int      @id @default(autoincrement())
