@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  background-color:#212626;
 }
 
 .logo {
@@ -22,7 +23,7 @@
 .button {
   margin-right: 10px;
   background-color: #aad8d3; /* Verde pastel */
-  color: #bcaaa4; /* Blanco café clarito */
+  color: #070606; /* Blanco café clarito */
   border: none;
   padding: 10px 20px;
   border-radius: 5px;

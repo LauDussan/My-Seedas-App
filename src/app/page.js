@@ -10,8 +10,8 @@ export default function Home() {
           <Image
             src="/LOGO-SEEDAS.jpg"
             alt="Seedas Logo"
-            width={200}
-            height={70}
+            width={120}
+            height={55}
           />
         </div>
         <div className={styles.buttons}>
