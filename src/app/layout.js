@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
     <html lang="en">
-      <body >
+      <body className={inter.className} >
         <Header/>
         {/* Layout UI */}
         <main>{children}</main>
